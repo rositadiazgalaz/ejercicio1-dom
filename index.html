@@ -13,13 +13,15 @@
 	<p>Podemos usar <a name="enlace4">enlaces</a> para crear botones también.</p>
 
 	<p>Muestra aquí cuántos enlaces hay en este sitio:</p>
-	<span id="num_enlaces"></span>
 	<button onclick="buscar()">Cuantas hay?</button>
+	<span id="num_enlaces"></span>
+	
 	<script>
 		//Escribe aquí tu código Javascript
 		function buscar(){
 			var x = document.getElementsByTagName("a");
 			document.getElementById("num_enlaces").innerHTML = x.length;
+
 		}
 	</script>
 </body>
